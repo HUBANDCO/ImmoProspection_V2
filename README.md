@@ -56,10 +56,13 @@ Exemple de conversion CSV DVF → JSON (séparateur `;`) :
 ## Installation
 
 ```bash
-cd E:\Projects\ImmoProspection_V2
+git clone https://github.com/HUBANDCO/ImmoProspection_V2.git
+cd ImmoProspection_V2
 npm install
 npm run dev
 ```
+
+**Données** : Les fichiers `properties.json` et `insee_carreaux_paris.json` ne sont pas versionnés (trop volumineux). Générez-les avec les scripts dans `public/Sources_histo/` (voir section Données ci-dessus).
 
 L'API backend est intégrée au serveur Vite en dev (plugin). Elle charge `public/data/properties.json` et expose :
 - `GET /api/properties` — pagination + filtres (page, limit, code_postal, ville, type_bien, prix_min, prix_max, annee_min, annee_max, sort_by, sort_order)

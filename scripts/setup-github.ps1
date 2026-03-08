@@ -22,6 +22,6 @@ git commit -m "Initial commit - ImmoProspection V2"
 # Créer le repo sur GitHub et pousser
 gh repo create ImmoProspection_V2 --public --source=. --remote=origin --push
 
-Write-Host "`nRepo créé : https://github.com/$(gh api user -q .login)/ImmoProspection_V2" -ForegroundColor Green
+Write-Host "`nRepo créé : https://github.com/HUBANDCO/ImmoProspection_V2" -ForegroundColor Green
 Write-Host "`nNote : Les fichiers volumineux (properties.json, insee, GeoJSON, CSV) sont exclus."
 Write-Host "Générez-les localement avec les scripts dans public/Sources_histo/" -ForegroundColor Yellow
